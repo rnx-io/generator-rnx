@@ -1,0 +1,9 @@
+
+    // Markdown example
+    public ITaskDescriptor MakeHtml => Series(
+        CreateElements(@"# Some Header
+        
+This *is* awesome"),
+        Markdown(),
+        LogElement(e => "HTML: " + e.Text.Trim())
+    );

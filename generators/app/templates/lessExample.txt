@@ -1,0 +1,10 @@
+
+    // Less example
+    public ITaskDescriptor MakeCss => Series(
+        CreateElements(@"@pale-green-color: #4D926F;
+    #header {
+    color: @pale-green-color;
+}"),
+        Less(),
+        LogElement(e => "CSS: " + e.Text)
+    );
