@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Rnx.Abstractions.Tasks;
 using Rnx.Tasks.Core.FileSystem;
 using static Rnx.Tasks.Core.Tasks;
